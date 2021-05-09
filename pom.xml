@@ -26,6 +26,7 @@
         <jdbi.version>3.19.0</jdbi.version>
         <tinylog.version>2.2.1</tinylog.version>
         <exec.cleanupDaemonThreads>false</exec.cleanupDaemonThreads>
+        <exec.mainClass>user.Main</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
@@ -39,6 +40,16 @@
             <artifactId>jdbi3-sqlobject</artifactId>
             <version>${jdbi.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
